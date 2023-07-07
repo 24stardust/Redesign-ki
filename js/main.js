@@ -28,20 +28,20 @@ $(document).ready(function(){
         mb_submenu_height[index]= 55*count+20;
     })
 
-    let mb_li = $('.mb-menu > li')
-    $.each(mb_mainmenu, function(index){
-        $(this).click(function(e){
-            e.preventDefault();
-            $(this).toggleClass('mb-mainmenu-open')
-            let active = $(this).hasClass('mb-mainmenu-open')
-            if(active){
-                let temp = mb_submenu_height[index]
-                mb_li.eq(index).height(temp+55)
-                // mb_li.eq(index).siblings().height(70)
-            }else {
-                mb_li.eq(index).height(70)
-            }
-        })
-    })
+    // let mb_li = $('.mb-menu > li')
+    // $.each(mb_mainmenu, function(index){
+    //     $(this).click(function(e){
+    //         e.preventDefault();
+    //         $(this).toggleClass('mb-mainmenu-open')
+    //         let active = $(this).hasClass('mb-mainmenu-open')
+    //         if(active){
+    //             let temp = mb_submenu_height[index]
+    //             mb_li.eq(index).height(temp+55)
+    //             // mb_li.eq(index).siblings().height(70)
+    //         }else {
+    //             mb_li.eq(index).height(70)
+    //         }
+    //     })
+    // })
 
 })

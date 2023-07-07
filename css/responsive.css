@@ -79,9 +79,6 @@
 }
 /* 767px 비주얼 */
 @media screen and (max-width: 767px) {
-	.visual {
-		height: 95vh;
-	}
 	.swiper-slide {
 		background: url('../images/mobile_slide1.png') no-repeat center;
 		background-size: 65%;

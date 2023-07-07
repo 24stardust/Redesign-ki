@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>키다리스튜디오</title>
-    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- skrollr CDN -->
@@ -112,6 +113,12 @@
             <!-- 메인 비주얼 -->
             <section class="visual">
                 <!-- Swiper -->
+                <div class="mb-main">
+                    <div class="slide-text">
+                        <h2>최고의 콘텐츠 소비가치를 만드는 것</h2>
+                        <p>일상의 순간이 콘텐츠가 되어 세상과 소통하고<br>디지털 환경 속에서 변화와 혁신을 만들어갑니다.</p>
+                    </div>
+                </div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide s1">
@@ -398,9 +405,11 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+      slidePerView: 1,
       spaceBetween: 0,
       centeredSlides: true,
       loop: true,
+      disableOnInteraction: false,
       autoplay: {
         delay: 7000,
         disableOnInteraction: false,
@@ -414,12 +423,19 @@
         prevEl: ".swiper-button-prev",
       },
       loop: true,
-      observer: true,	
+    //   observer: true,	
     });
   </script>
 
     <script>
-        skrollr.init();
+    skrollr.init({
+     forceHeight: false,
+     mobileCheck: function(){
+          if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+               // mobile device
+          }
+            }
+        });
     </script>
 
 </body>

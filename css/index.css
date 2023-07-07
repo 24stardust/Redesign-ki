@@ -268,22 +268,17 @@ header .header-logo {
 /* =============== 메인 비주얼 */
 .visual {
 	width: 100%;
-	height: 50vw;
+	height: 100vh;
 	overflow: hidden;
 }
 .mySwiper {
-	height: 100%;
-	position: relative;
-}
-.swiper-wrapper {
-	display: flex;
-	width: 300%;
-	height: 100%;
+	height: 100vh;
+	width: 100vw;
 }
 .swiper-slide {
 	background: url("../images/bg/slide1.png") no-repeat right bottom;
 	background-size: contain;
-	padding: 5.63em;
+	padding: 6% 1.5%;
 }
 .swiper-slide.s1 {
 	background-color: #FFF0ED;
@@ -331,7 +326,20 @@ header .header-logo {
 	height: 12px;
 	background-color: red;
 }
-
+/* 모바일 메인 이미지 */
+.mb-main {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	background: url("../images/bg/slide1.png") no-repeat center top;
+	background-position: 100% 0%;
+	background-size: auto 70%;
+	background-color: #FFF0ED;
+	display: none;
+}
+.mb-main .slide-text {
+	padding: 8%;
+}
 /* =============== 대표작품 */
 .product {
 	padding: 12.5em 0;
