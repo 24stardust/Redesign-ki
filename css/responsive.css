@@ -63,10 +63,10 @@
 		display: none;
 	}
 	.visual {
-		height: 90vh;
+		height: 100vh;
 	}
 	.mySwiper {
-		height: 90vh;
+		height: 100vh;
 	}
 	.swiper-slide {
 		background: url(../images/mobile_slide1.png) no-repeat center;
@@ -89,24 +89,19 @@
 }
 @media screen and (max-width: 850px) {
 	.slide-text h2 {
-		font-size: 3.5em;
+		font-size: 3.2em;
 	}
 }
 /* 767px 비주얼 */
 @media screen and (max-width: 767px) {
 	.swiper-slide {
 		background: url('../images/mobile_slide1.png') no-repeat center;
-		background-size: 65%;
-		background-position: 50% 29%;
+		background-size: 55%;
+		background-position: 50% 25%;
 	}
 	.slide-text {
 		justify-content: end;
 		width: 100%;
-	}
-}
-@media screen and (max-width: 600px) {
-	.swiper-slide {
-		padding: 5em;
 	}
 }
 @media screen and (max-width: 375px) {
