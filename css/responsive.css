@@ -62,6 +62,17 @@
 	.header-menu nav {
 		display: none;
 	}
+	.visual {
+		height: 90vh;
+	}
+	.mySwiper {
+		height: 90vh;
+	}
+	.swiper-slide {
+		background: url(../images/mobile_slide1.png) no-repeat center;
+    background-size: 40%;
+    background-position: 90% 50%;
+	}
 	.slide-text {
 		word-break: keep-all;
 	}
@@ -71,6 +82,10 @@
 	.slide-text p {
 		font-size: 1.5em;
 	}
+	.mySwiper .swiper-pagination {
+		display: none;
+	}
+	
 }
 @media screen and (max-width: 850px) {
 	.slide-text h2 {

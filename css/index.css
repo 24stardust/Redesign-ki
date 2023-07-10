@@ -276,8 +276,10 @@ header .header-logo {
 	width: 100vw;
 }
 .swiper-slide {
-	background: url("../images/bg/slide1.png") no-repeat right bottom;
-	background-size: contain;
+	background: url("../images/bg/slide1.png") no-repeat;
+	background-clip: padding-box;
+	background-size: cover;
+	background-position: 60% 50%;
 	padding: 6% 1.5%;
 }
 .swiper-slide.s1 {
@@ -296,6 +298,7 @@ header .header-logo {
 	color: #000000;
 	height: 100%;
 	width: 55%;
+	padding: 0 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -308,20 +311,21 @@ header .header-logo {
 	margin: 5px 0;
 	font-size: 1.8em;
 }
-.swiper-pagination {
+.mySwiper .swiper-pagination {
 	position: absolute;
 	top: 32%; left: 90px;
+	height: fit-content;
 	display: flex;
 }
-.swiper-pagination-bullet {
+.mySwiper .swiper-pagination-bullet {
 	display: block;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.5);
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	margin: 5px;
 }
-.swiper-pagination-bullet-active {
+.mySwiper .swiper-pagination-bullet-active {
 	width: 12px;
 	height: 12px;
 	background-color: red;
